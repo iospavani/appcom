@@ -26,7 +26,7 @@
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
     [self getFacebookData];
-    
+    [self buttonForGoogle];
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
 //
@@ -45,6 +45,9 @@
 //     }];
 
     // Do any additional setup after loading the view, typically from a nib.
+}
+-(void)buttonForGoogle{
+    NSLog(@"googleplus");
 }
 - (void)getFacebookData{
     if ([FBSDKAccessToken currentAccessToken]) {
