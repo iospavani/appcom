@@ -26,6 +26,7 @@
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
     [self getFacebookData];
+    [self buttonForGoogle];
     [self dummyMethod];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
