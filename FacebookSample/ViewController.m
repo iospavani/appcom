@@ -28,6 +28,7 @@
     [self getFacebookData];
      [self dummyMethod];
       [self dummyMethod2];
+    [self googlePlus];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
@@ -48,7 +49,10 @@
 //
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void) dummyMethod {
+-(void)googlePlus{
+    NSLog(@"main Branch");
+}
+-(void)dummyMethod {
     NSLog(@"dummyMethod-0");
     NSLog(@"dummyMethod-1");
     NSLog(@"dummyMethod-2");
