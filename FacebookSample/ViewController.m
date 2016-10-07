@@ -26,8 +26,7 @@
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
     [self getFacebookData];
-    [self buttonForGoogle];
-    [self dummyMethod];
+     [self dummyMethod];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
