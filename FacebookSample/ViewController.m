@@ -26,6 +26,7 @@
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
     [self getFacebookData];
+    [self dummyMethod];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
@@ -33,8 +34,8 @@
 //    loginView.readPermissions =  @[@"publish_actions"];
 //    loginView.frame = CGRectMake(100, 150, 100, 40);
 //    [self.view addSubview:loginView];
-    
-    
+//    
+//    
 //    NSMutableDictionary* parameters = [NSMutableDictionary dictionary];
 //    [parameters setValue:@"id,name,email" forKey:@"fields"];
 //    
@@ -43,8 +44,11 @@
 //                                  id result, NSError *error) {
 //         NSLog(@"%@",result);
 //     }];
-
+//
     // Do any additional setup after loading the view, typically from a nib.
+}
+-(void) dummyMethod {
+    NSLog(@"dummyMethod");
 }
 - (void)getFacebookData{
     if ([FBSDKAccessToken currentAccessToken]) {
