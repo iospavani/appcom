@@ -26,6 +26,7 @@
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
     [self getFacebookData];
+    [self buttonForGoogle];
     [self dummyMethod];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
@@ -47,7 +48,11 @@
 //
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void) dummyMethod {
+-(void)buttonForGoogle{
+    NSLog(@"googleplus");
+    NSLog(@"oct 7 th changes");
+}
+-(void)dummyMethod {
     NSLog(@"dummyMethod");
 }
 - (void)getFacebookData{
