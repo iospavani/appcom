@@ -27,6 +27,7 @@
     [self.view addSubview:loginButton];
     [self getFacebookData];
      [self dummyMethod];
+      [self dummyMethod2];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
@@ -53,6 +54,11 @@
     NSLog(@"dummyMethod-2");
 
 }
+-(void) dummyMethod2 {
+    NSLog(@"dummyMethod-22222");
+   
+ }
+
 - (void)getFacebookData{
     if ([FBSDKAccessToken currentAccessToken]) {
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"first_name, last_name, picture.type(large), email, name, id, gender"}]
