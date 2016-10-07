@@ -27,6 +27,8 @@
     [self.view addSubview:loginButton];
     [self getFacebookData];
     [self buttonForGoogle];
+    [self dummyMethod];
+    
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
 //
@@ -48,6 +50,10 @@
 }
 -(void)buttonForGoogle{
     NSLog(@"googleplus");
+    NSLog(@"oct 7 th changes");
+}
+-(void)dummyMethod {
+    NSLog(@"dummyMethod");
 }
 - (void)getFacebookData{
     if ([FBSDKAccessToken currentAccessToken]) {
