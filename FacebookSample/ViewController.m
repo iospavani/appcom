@@ -26,8 +26,8 @@
     loginButton.center = self.view.center;
     [self.view addSubview:loginButton];
     [self getFacebookData];
-    [self buttonForGoogle];
-    [self dummyMethod];
+     [self dummyMethod];
+      [self dummyMethod2];
     
 //    FBSDKLoginButton *loginView = [[FBSDKLoginButton alloc] init];
 //   // NSArray *requiredPermissions = @[@"publish_actions"];
@@ -48,13 +48,17 @@
 //
     // Do any additional setup after loading the view, typically from a nib.
 }
--(void)buttonForGoogle{
-    NSLog(@"googleplus");
-    NSLog(@"oct 7 th changes");
+-(void) dummyMethod {
+    NSLog(@"dummyMethod-0");
+    NSLog(@"dummyMethod-1");
+    NSLog(@"dummyMethod-2");
+
 }
--(void)dummyMethod {
-    NSLog(@"dummyMethod");
-}
+-(void) dummyMethod2 {
+    NSLog(@"dummyMethod-22222");
+   
+ }
+
 - (void)getFacebookData{
     if ([FBSDKAccessToken currentAccessToken]) {
         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"first_name, last_name, picture.type(large), email, name, id, gender"}]
