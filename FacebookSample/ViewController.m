@@ -48,7 +48,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void) dummyMethod {
-    NSLog(@"dummyMethod");
+    NSLog(@"dummyMethod-0");
+    NSLog(@"dummyMethod-1");
+    NSLog(@"dummyMethod-2");
+
 }
 - (void)getFacebookData{
     if ([FBSDKAccessToken currentAccessToken]) {
